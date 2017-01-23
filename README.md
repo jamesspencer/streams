@@ -54,7 +54,7 @@ import zip from 'zip/zip'
 zip(stream1$, stream2$);
 ```
 
-### Marble diagram ([RxMarbles](rxmarbles.com/#zip))
+### Marble diagram ([RxMarbles](https://rxmarbles.com/#zip))
 
 ```
 input1: -1--2------3--4---|
