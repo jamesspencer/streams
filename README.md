@@ -1,4 +1,4 @@
-# Reactive fun with streams/observables in Javascript.
+# Reactive fun with streams/observables in JavaScript
 
 Uses such libraries as [xstream](https://github.com/staltz/xstream) and [RxJS](https://github.com/Reactive-Extensions/RxJS/).
 
@@ -44,7 +44,7 @@ Requests demo (max of 3)
 npm run-script concurrent
 ```
 
-## Zip
+## Zip (xstream)
 
 Zips multiple streams together, emits arrays of values if and when all streams have something new to offer. 
 
