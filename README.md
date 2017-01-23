@@ -34,7 +34,7 @@ With a concurrency of 3:
 
 ```
 requests:  -a-b-c-d-e--------f-g-h-i---|
-responses: ----------A---B-C-D----E--F--
+responses: ----------T---T-T-T----T--T--
 output:    -a-b-c----d---e---f-g--h--i-|
 ```
 
@@ -57,9 +57,9 @@ zip(stream1$, stream2$);
 ### Marble diagram ([RxMarbles](rxmarbles.com/#zip))
 
 ```
-input1: -a--b-----c--d---|
-input2: --1--2--3--4-----|
-output: --1a-2b---3c-4d--|
+input1: -1--2------3--4---|
+input2: ---a--b--c--d-----|
+output: ---1a-2b---3c-4d--|
 
 
 input1: -a---b---c-----d----|
