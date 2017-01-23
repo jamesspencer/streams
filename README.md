@@ -17,10 +17,13 @@ import concurrent from 'concurrent/concurrent'
 
 // create a proxy to close the circular dependency
 const responsesProxy$ = xs.create();
+
 // limits the requests$ to 3 at most
 const 3requests$ = concurrent(requests$, responsesProxy$, 3);
+
 // do something with the requests
 const responses$ = 3requests$.addListener(/* ... */);
+
 // closes the circular dependency by passing our completed responses back in order to free up more requests
 responsesProxy$.imitate(responses$);
 ```
